@@ -27,13 +27,18 @@ namespace Planner
      
   }
 
-//Constructor
+// //Constructor
+// A constructor is a special method that is used to initialize objects. The advantage of a constructor, is that it is called when an object of a class is created. It can be used to set initial values for fields
+//building is the constructor and address is the parameter
   public Building(string address)
   {
       _address = address ;
   }
 
-  //Method
+// //Method
+// Construct() is the name of the method
+// public mean that you have access to this method outside this class
+// void means that this method does not have a return value. 
 public void Construct()
 {
     _dateConstructed = DateTime.Now;
@@ -43,10 +48,19 @@ public void Purchase(string buyer)
 {
     _owner = buyer;
 }
+
+//This Method sets the designer
 public void Design(string designer)
 {
     _designer = designer;
 }
+
+//This method gets the designer 
+public string GetDesigner()
+{
+    return _designer; 
+}
+
 
 
 }
