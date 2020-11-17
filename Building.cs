@@ -44,21 +44,11 @@ public void Construct()
     _dateConstructed = DateTime.Now;
 }
 
-public DateTime GetDateConstructed()
-{
-    return _dateConstructed;
-}
-
-
 public void Purchase(string buyer)
 {
     _owner = buyer;
 }
 
-public string GetPurchase()
-{
-    return _owner;
-}
 
 //This Method sets the designer
 public void Design(string designer)
@@ -66,22 +56,18 @@ public void Design(string designer)
     _designer = designer;
 }
 
-//This method gets the designer 
-public string GetDesigner()
+
+
+
+public void DisplayBuilding()
 {
-    return _designer; 
+         Console.WriteLine(_address);
+         Console.WriteLine("------------------------");
+         Console.WriteLine($"Designed by {_designer}");
+         Console.WriteLine($"Constructed on {_dateConstructed }");
+         Console.WriteLine($"Owned by {_owner}");
+         Console.WriteLine($"{Volume}");
+         Console.WriteLine();
 }
-
-public void Address(string address)
-{
-    _address = address;
-}
-
-public string GetAddress()
-{
-    return _address; 
-}
-
-
 }
 }

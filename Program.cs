@@ -7,6 +7,7 @@ namespace Planner
         static void Main(string[] args)
         {
         //create several building 
+        //building is the type  fiveOneTwoEight is the variable and new building is construted it 
          Building fiveOneTwoEight = new Building("512 8th Avenue");
          Building fiveOneTwoSix = new Building("812 15th Avenue");
          Building fiveOneTwoFour = new Building("310 10th Avenue");
@@ -28,48 +29,52 @@ namespace Planner
      
 
         // Construct each building 
-         fiveOneTwoEight.Address("512 8th Avenue");
+        
          fiveOneTwoEight.Design("Lacey");
          //fiveOneTwoEight is the variable and Construct is the method. We add the dot to connect the two
          fiveOneTwoEight.Construct();
          fiveOneTwoEight.Purchase("Faith");
 
-         fiveOneTwoSix.Address("812 15th Avenue");
+        
          fiveOneTwoSix.Design("Rose");
          fiveOneTwoSix.Construct();
          fiveOneTwoSix.Purchase("Adam");
+         
  
-         fiveOneTwoFour.Address("310 10th Avenue");
+        
          fiveOneTwoFour.Design("Erik");
          fiveOneTwoFour.Construct();
          fiveOneTwoFour.Purchase("Tasha");
 
 
       
-         
+         fiveOneTwoEight.DisplayBuilding();
+         fiveOneTwoSix.DisplayBuilding();
+         fiveOneTwoFour.DisplayBuilding();
 
          //After all of the buildings have been purchased, display the following information to the console for each building.
-         Console.WriteLine($"{fiveOneTwoEight.GetAddress()}");
-         Console.WriteLine("------------------------");
-         Console.WriteLine($"Designed by {fiveOneTwoEight.GetDesigner()}");
-         Console.WriteLine($"Constructed on {fiveOneTwoEight.GetDateConstructed()}");
-         Console.WriteLine($"Owned by {fiveOneTwoEight.GetPurchase()}");
-         Console.WriteLine();
+        //  Console.WriteLine($"{fiveOneTwoEight.GetAddress()}");
+        //  Console.WriteLine("------------------------");
+        //  Console.WriteLine($"Designed by {fiveOneTwoEight.GetDesigner()}");
+        //  Console.WriteLine($"Constructed on {fiveOneTwoEight.GetDateConstructed()}");
+        //  Console.WriteLine($"Owned by {fiveOneTwoEight.GetPurchase()}");
+        //  Console.WriteLine($"{fiveOneTwoEight.Volume}");
+        //  Console.WriteLine();
 
-         Console.WriteLine($"{fiveOneTwoSix.GetAddress()}");
-         Console.WriteLine("------------------------");
-         Console.WriteLine($"Designed by {fiveOneTwoSix.GetDesigner()}");
-         Console.WriteLine($"Constructed on {fiveOneTwoSix.GetDateConstructed()}");
-         Console.WriteLine($"Owned by {fiveOneTwoSix.GetPurchase()}");
-         Console.WriteLine();
+        //  Console.WriteLine($"{fiveOneTwoSix.GetAddress()}");
+        //  Console.WriteLine("------------------------");
+        //  Console.WriteLine($"Designed by {fiveOneTwoSix.GetDesigner()}");
+        //  Console.WriteLine($"Constructed on {fiveOneTwoSix.GetDateConstructed()}");
+        //  Console.WriteLine($"Owned by {fiveOneTwoSix.GetPurchase()}");
+        //  Console.WriteLine();
 
 
-          Console.WriteLine($"{fiveOneTwoFour.GetAddress()}");
-         Console.WriteLine("------------------------");
-         Console.WriteLine($"Designed by {fiveOneTwoFour.GetDesigner()}");
-         Console.WriteLine($"Constructed on {fiveOneTwoFour.GetDateConstructed()}");
-         Console.WriteLine($"Owned by {fiveOneTwoFour.GetPurchase()}");
-         Console.WriteLine();
+        //   Console.WriteLine($"{fiveOneTwoFour.GetAddress()}");
+        //  Console.WriteLine("------------------------");
+        //  Console.WriteLine($"Designed by {fiveOneTwoFour.GetDesigner()}");
+        //  Console.WriteLine($"Constructed on {fiveOneTwoFour.GetDateConstructed()}");
+        //  Console.WriteLine($"Owned by {fiveOneTwoFour.GetPurchase()}");
+        //  Console.WriteLine();
 
 
 
