@@ -5,11 +5,11 @@ namespace Planner
   public class Building 
   {
       //private fields
-      //private fields will equal something and public will be get/set
-      private string _designer = "Faith Magras";
-      private DateTime _dateConstructed = 10-20-2010 04:30:00;
-      private string _address = "104 barker lane";
-      private string _owner = "Kaylis Magras";
+     // you can use the the private field inside this class but not anywhere else
+      private string _designer  {get; set;}
+      private DateTime _dateConstructed  {get; set;}
+      private string _address {get; set;}
+      private string _owner {get; set;}
 
      // public properties of the building 
      //get allows you access it and set allows you to assign it
@@ -24,8 +24,30 @@ namespace Planner
          {
            return Width * Depth * (3 * Stories );
          }
-     }
+     
   }
 
+//Constructor
+  public Building(string address)
+  {
+      _address = address ;
+  }
 
+  //Method
+public void Construct()
+{
+    _dateConstructed = DateTime.Now;
+}
+
+public void Purchase(string buyer)
+{
+    _owner = buyer;
+}
+public void Design(string designer)
+{
+    _designer = designer;
+}
+
+
+}
 }
