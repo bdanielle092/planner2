@@ -27,7 +27,7 @@ namespace Planner
      
   }
 
-// //Constructor
+
 // A constructor is a special method that is used to initialize objects. The advantage of a constructor, is that it is called when an object of a class is created. It can be used to set initial values for fields
 //building is the constructor and address is the parameter
   public Building(string address)
@@ -44,9 +44,20 @@ public void Construct()
     _dateConstructed = DateTime.Now;
 }
 
+public DateTime GetDateConstructed()
+{
+    return _dateConstructed;
+}
+
+
 public void Purchase(string buyer)
 {
     _owner = buyer;
+}
+
+public string GetPurchase()
+{
+    return _owner;
 }
 
 //This Method sets the designer
@@ -61,6 +72,15 @@ public string GetDesigner()
     return _designer; 
 }
 
+public void Address(string address)
+{
+    _address = address;
+}
+
+public string GetAddress()
+{
+    return _address; 
+}
 
 
 }
