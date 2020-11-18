@@ -50,7 +50,7 @@ public void Purchase(string buyer)
 }
 
 
-//This Method sets the designer
+//This method sets the designer
 public void Design(string designer)
 {
     _designer = designer;
@@ -58,15 +58,15 @@ public void Design(string designer)
 
 
 
-
+//Method to display the building 
 public void DisplayBuilding()
 {
          Console.WriteLine(_address);
          Console.WriteLine("------------------------");
          Console.WriteLine($"Designed by {_designer}");
-         Console.WriteLine($"Constructed on {_dateConstructed }");
+         Console.WriteLine($"Constructed on {_dateConstructed}");
          Console.WriteLine($"Owned by {_owner}");
-         Console.WriteLine($"{Volume}");
+         Console.WriteLine($"{Volume} cubic meters of space");
          Console.WriteLine();
 }
 }
