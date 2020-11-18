@@ -63,7 +63,6 @@ namespace Planner
        {
            building.DisplayBuilding();
         
-           
        }
 
 
